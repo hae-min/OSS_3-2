@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const EmpCreate = () => {
-  const [id, setId] = useState("");
+  const [id] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [experienceYears, setExperienceYears] = useState(0);
-  const [careerLevel, setCareerLevel] = useState("Junior");
+  const [experienceYears] = useState(0);
+  const [careerLevel] = useState("Junior");
   const [active, setActive] = useState(true);
   const [validation, setValidation] = useState(false);
   const navigate = useNavigate();
