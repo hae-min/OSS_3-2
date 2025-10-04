@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.btn {
+  margin: 2px;
+}
+.divbtn {
+  float: left;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my-add-btn {
+  background-color: #ff5722 !important ;   /* 원하는 배경색 (예: 주황색) */
+  border-color: #f94e1a !important;
+  color: white !important;                /* 글자색 */
+  font-weight: bold;           /* 글자 두껍게 (선택사항) */
+  transition: background-color 0.3s ease; /* hover 애니메이션 */
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  position: relative;
+  display: inline-block;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 60%;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff5722, #2196f3);
+}
+
+
